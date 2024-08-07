@@ -1,3 +1,6 @@
 [submodule "Blog_Website_CodSoft"]
 	path = Blog_Website_CodSoft
 	url = https://github.com/AmanMishra2003/BlogSite
+[submodule "PMS---project-management-system"]
+	path = PMS---project-management-system
+	url = https://github.com/AmanMishra2003/PMS---project-management-system

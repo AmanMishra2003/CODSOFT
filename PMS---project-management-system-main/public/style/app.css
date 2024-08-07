@@ -1,0 +1,214 @@
+body{
+    background-color: rgb(24, 30, 37) !important;
+}
+
+input,select, textarea, input::placeholder{
+    background-color: rgb(36, 40, 45) !important;
+    color: white !important;
+    /* border: none !important; */
+}
+input, textarea, input::selection{
+    color: white !important;
+    /* border: none !important; */
+}
+
+.card{
+    background-color: rgb(14, 14, 14) !important ; 
+    color: white !important;
+}
+
+/* containers */
+.body-container{
+    margin-top: 2rem;
+    margin-left: 300px;
+    min-height: 100vh;
+    padding: 1.5rem;
+    color: white;
+    transition: margin-left 200ms ease-in-out;
+}
+
+.main-container{
+    position: relative !important;   
+    background-color: rgb(24, 30, 37);
+}
+
+.sidebar-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 15em;
+    min-width: 300px;
+    z-index: 80;
+    transition: left 300ms;
+}
+
+.profile-sidebar-container{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    min-height: 100vh;
+    min-width: 300px;
+    z-index: 80;
+    transition: right 500ms;
+}
+
+/* container code till here  */
+
+.btn-warning{
+    background-color: rgb(128, 40, 210) !important;
+    color: white !important;
+    border-color:  rgb(128, 40, 210) !important;
+}
+.btn-warning:hover{
+    background-color: rgb(81, 13, 145) !important;
+}
+
+.btn-secondary{
+    background-color: rgb(244, 93, 24) !important;
+    color: white !important;
+    border-color:  rgb(244, 93, 24)!important;
+}
+.btn-secondary:hover{
+    background-color: rgb(176, 64, 13)!important;
+}
+
+.btn-danger{
+    background-color: rgb(210, 40, 40) !important;
+    color: white !important;
+    border-color:  rgb(210, 40, 40) !important;
+}
+.btn-danger:hover{
+    background-color: rgb(134, 11, 11) !important;
+}
+
+
+.nav-heading{
+    filter: drop-shadow(-5px 15px 17px #0501fe);
+}
+
+.navbar{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100% !important;
+}
+
+.hamburger{
+    min-height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em .5em;
+    cursor: pointer;
+}
+
+
+
+
+
+.sidebar-container.openSidebar{
+    left: 0;
+}
+
+.sidebar-container.closeSlider{
+    left: -100%;
+}
+.profile-sidebar-container.openSidebar{
+    right: 0;
+}
+
+.hamburger svg {
+    transition: transform 0.3s ease; /* Smooth rotation transition */
+}
+
+.nav-item a:hover{
+    color: white !important;
+}
+
+.homePage-section{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgb(24, 30, 37);
+}
+
+.homePage-section img{
+    max-width: 200px ;
+    aspect-ratio: 1/1;
+}
+
+.project-link{
+    min-width: 150px !important;
+    display: inline-block;
+    aspect-ratio: 1/1;
+    position: relative !important;
+}
+
+.project-image{
+    min-width: 150px !important;
+    position: absolute !important;
+    transition: transform 200ms;
+    z-index: 4;
+}
+
+.project-image-white{
+    min-width:110px !important;
+    height: 70px !important;
+    position: absolute !important;
+    top: 30px;
+    left: 20%;
+    transition: transform 200ms;
+    z-index: 3;
+}
+
+.project-link:hover .project-image {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.project-link:hover .project-image-white {
+    transform: translateY(-30px)
+}
+
+.project-title{
+    letter-spacing: 1px;
+}
+
+.slide-image{
+    width: 40em;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+}
+
+input[name='deleteImages[]']:checked ~ label{
+    background-color: white !important;
+    color: red !important;
+}
+
+.task-image{
+    width: 35em;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+
+@media (max-width:770px ) and (orientation : portrait)  {
+    .sidebar-container{
+        position: fixed;
+        min-height: 100vh; 
+        left: -100%;
+    }
+
+    .body-container{
+        margin-left: 0px !important;
+    }
+    
+    
+
+   
+}
